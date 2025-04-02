@@ -12,20 +12,13 @@ JavaScript is the core of modern web development, making websites interactive an
 
 ## What You Will Learn   <br>
 
-### **JavaScript Fundamentals** <br>
+## **JavaScript Fundamentals** <br>
 - Variables (`var`, `let`, `const`)   <br>
 - Data Types & Operators   <br>
 - Loops & Conditionals   <br>
 - Functions & Arrow Functions   <br>
 
-### ** JavaScript & Web Pages**   <br>
+##** JavaScript & Web Pages**   <br>
 - **DOM Manipulation** (Selecting and modifying elements)   <br>
 - **Event Handling** (Click, input, hover events)   <br>
 - **Form Validation** (User input handling)     <br>
-
-
-## 📂 How to Use?  
-
-1️⃣ **Clone the repository**  
-```sh
-git clone https://github.com/your-username/repository-name.git
