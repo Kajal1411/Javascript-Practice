@@ -10,7 +10,7 @@ JavaScript is the core of modern web development, making websites interactive an
 - Forms, validation, and user interactions  <br> 
 - Small projects to apply concepts in real-world scenarios  <br>  
 
-## What You Will Learn   <br>
+## What You Will Learn:   <br>
 
 ## **JavaScript Fundamentals** <br>
 - Variables (`var`, `let`, `const`)   <br>
@@ -18,7 +18,7 @@ JavaScript is the core of modern web development, making websites interactive an
 - Loops & Conditionals   <br>
 - Functions & Arrow Functions   <br>
 
-##** JavaScript & Web Pages**   <br>
+## **JavaScript & Web Pages**   <br>
 - **DOM Manipulation** (Selecting and modifying elements)   <br>
 - **Event Handling** (Click, input, hover events)   <br>
 - **Form Validation** (User input handling)     <br>
