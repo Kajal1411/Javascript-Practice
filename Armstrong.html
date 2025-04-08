@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=371;
+        var sum=0,originalNo,rem;
+        originalNo=num;
+        while(num!=0)
+        {
+            rem=num%10;
+            sum=sum+(rem*rem*rem);
+            num=Math.floor(num/10);
+        }
+        if(originalNo==sum)
+        {
+           document.write("Armstrong");
+        }
+        else
+        {
+            document.write("Not Armstrong");
+        }
+    </script>
+</body>
+</html>
