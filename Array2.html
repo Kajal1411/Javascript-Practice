@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //By new keyword
+
+        var i;
+        var emp=new Array();
+        emp[0]="Arun";
+        emp[1]="Varun";
+        emp[2]="John";
+        for(i=0;i<emp.length;i++)
+        {
+           document.write(emp[i]+ "<br>");
+        }
+
+        //By Array constructor
+        var emp1=new Array("Jay","rajat","Smit");
+        for(i=0;i<emp.length;i++)
+        {
+           document.write(emp1[i]+ "<br>");
+        }
+
+        //Array methods
+
+        var a=emp.indexOf("Varun");
+        document.write(a+"<br>");
+
+        var b=emp.reverse();
+        document.write(b+"<br>");
+
+        var c=emp.concat(emp1);
+        document.write(c+"<br>");
+
+        var arr=[1,2,3,4,5,6,7];
+        arr.push(8);
+        document.write(arr+"<br>");
+        arr.pop(0);
+        document.write(arr+"<br>");
+        arr.unshift(0);
+        document.write(arr+"<br>");
+        arr.shift();
+        document.write(arr+"<br>");
+        arr.splice(1,2);
+        document.write(arr+"<br>");
+
+    </script>
+</body>
+</html>
