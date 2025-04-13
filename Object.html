@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object literal
+        var obj1={name:'kajal',id:101}
+        console.log(obj1);
+        document.write(obj1.name+"<br>");
+        document.write(obj1.id+"<br>");
+
+        //by instance of object
+        var obj2=new Object();
+        obj2.id=102;
+        obj2.name="abc";
+        obj2.salary=20000;
+        document.write(obj2.id+" "+obj2.name+" "+obj2.salary+"<br>");
+
+        //by using an object constructor
+        function Demo(id,name,salary)
+        {
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+        }
+        d=new Demo(103,"xyz",50000);  
+        document.write(d.id+" "+d.name+" "+d.salary);
+
+    </script>
+</body>
+</html>
