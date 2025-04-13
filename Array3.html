@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array of numbers
+        let marks = [85, 90, 78, 92, 88];
+
+        // Calculate sum
+        let sum = 0;
+        for (let i = 0; i < marks.length; i++) 
+        {
+        sum += marks[i];
+        }
+
+        // Calculate average
+        let average = sum / marks.length;
+
+        // Display results
+        console.log("Marks:", marks);
+        console.log("Total Marks:", sum);
+        console.log("Average Marks:", average.toFixed(2));
+
+    </script>
+</body>
+</html>
