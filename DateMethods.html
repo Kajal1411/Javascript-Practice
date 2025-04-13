@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //Date Methods
+
+        //getting current date and time
+
+        var currentDate=new Date();
+        console.log(currentDate);
+
+        //get specific date components
+
+        var currentDate=new Date();
+        var year=currentDate.getFullYear(); //gets the current year
+        var  month=currentDate.getMonth(); //gets the current month 0 to 11
+        var  date=currentDate.getDate(); //gets the current day of month
+        var  hour=currentDate.getHours(); //gets the current hour
+        var  minute=currentDate.getMinutes(); //gets the current minute
+        var  second=currentDate.getSeconds(); //gets the current second
+        console.log(year,month+1,date,hour,minute,second);
+
+        //setting specific date components
+
+        var myDate=new Date();
+        myDate.setFullYear(2025);//sets the year to 2025
+        myDate.setMonth(5);//sets the month to june
+        myDate.setDate(15);//sets the day to 15th
+        console.log(myDate);
+
+        var  currentDate=new Date();
+        currentDate.setDate(currentDate.getDate()+5);//adds 5 days to the current date
+        console.log(currentDate);
+
+        var  pastDate=new Date();
+        pastDate.setDate(pastDate.getDate()-10);//substract 10 days fro the current date
+        console.log(pastDate);
+
+
+        //get univarsal date component
+        var  currentDate=new Date();
+        var year=currentDate.getUTCFullYear();//gets the current year
+        var month=currentDate.getUTCMonth();//gets the current month 0 to 11
+        var date=currentDate.getUTCDate();//gets the current day of month
+        var hour=currentDate.getUTCHours();//gets the current hour
+        var minute=currentDate.getUTCMinutes();//gets the current minute
+        var second=currentDate.getUTCSeconds();//gets the current second
+        console.log(year,month+1,date,hour,minute,second);
+
+</script>
+</body>
+</html>
