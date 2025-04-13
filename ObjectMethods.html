@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={name:"kajal",age:21}
+
+        var m1=Object.keys(obj);
+        console.log(m1);
+
+        var m2=Object.entries(obj);
+        console.log(m2);
+
+        console.log(obj.hasOwnProperty("name"));
+        console.log(obj.hasOwnProperty("id"));
+
+        Object.freeze(obj);
+        console.log(obj);
+
+        var m3=Object.values(obj);   
+        console.log(m3);
+
+        var m4=Object.assign({},obj);  
+        console.log(m4.name + m4.age);
+
+
+
+        var a=Object.create(
+            {
+                name:'xyz',
+                id:'101'
+            }
+        )
+        console.log(obj);
+        console.log(a);
+           delete a.id;
+        console.log(a); 
+            delete obj.age;
+        console.log(obj);    
+</script>
+</body>
+</html>
+
+
+
+
