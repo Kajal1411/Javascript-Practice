@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create div tag
+var newDiv=document.createElement('div');
+console.log(newDiv);
+
+//add class
+newDiv.className='box';
+
+//add id
+newDiv.id='tbox';
+
+//create text node
+var newDivText=document.createTextNode('This is JS DOM object');
+console.log(newDivText);
+
+//add text to div
+newDiv.appendChild(newDivText);
+
+console.log(newDiv);
+
+
+
+    
+
+
+    </script>
+</body>
+</html>
