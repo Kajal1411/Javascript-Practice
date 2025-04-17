@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal
+        {
+            constructor(name,species)  //constructor method
+            {
+                this.name=name;
+                this.species=species;
+            }
+            speak()  //prototype method
+            {
+                console.log(this.name + " says hello!")
+
+            }
+            static demo() //static method
+            {
+                console.log("Hello everyone");
+            }
+
+        }
+        const dog=new Animal('Buddy','Dog');
+        dog.speak();
+        Animal.demo();
+    </script>
+</body>
+</html>
