@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student
+        {
+            constructor(name)
+            {
+                this.name=name;
+            }
+            showName()
+            {
+                console.log(this.name);
+            }
+        }
+        class PersonalDetails extends Student
+        {
+            constructor(email,mob,address,name)
+            {
+                super(name);
+                this.email=email;
+                this.mob=mob;
+                this.address=address;
+            }
+            show()
+            {
+                super.showName();
+                console.log(this.email);
+                console.log(this.mob);
+                console.log(this.address);
+            }
+
+        }
+        class Marks extends Student
+        {
+            constructor(m1,m2,m3,name)
+            {
+                super(name);
+                this.m1=m1;
+                this.m2=m2;
+                this.m3=m3;
+            }
+            show()
+            {
+                super.showName();
+                console.log("Marks:"+this.m1 +" " +this.m2 +" " +this.m3);
+                var total=this.m1+this.m2+this.m3;
+                console.log("Total:"+total);
+                var per=total/3;
+                console.log("Percentage:"+per);
+            }
+        }
+        class Rank extends Marks
+        {
+            constructor(rank,m1,m2,m3,name)
+            {
+                super(70,80,90,"Kajal");
+                this.rank=rank;
+            }
+            show()
+            {
+                super.show();
+                console.log("Rank:"+this.rank);
+            }
+        }
+        const p=new PersonalDetails("kajal@gmail.com",1234567890,"Pune","kajal");
+        p.show();
+        const r=new Rank(1,70,80,90,"kajal");
+        r.show();
+
+    </script>
+</body>
+</html>
