@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class Student
+    {
+        constructor(name)
+        {
+            this.name=name;
+        }
+        show()
+        {
+            console.log(this.name);
+        }
+    }
+    class RollNo extends Student
+    {
+        constructor(rollno,name)
+        {
+            super(name);
+            this.rollno=rollno;
+        }
+        show()
+        {
+            super.show();
+            console.log(this.rollno);
+        }
+    }
+    class Address extends RollNo
+    {
+        constructor(add,rollno,name)
+        {
+            super(rollno,name)
+            this.add=add;
+            this.rollno=rollno;
+            this.name=name;
+        }
+        show()
+        {
+            super.show();
+            console.log(this.add);
+        }
+    }
+    const s=new Address("Pune",1,"Kajal");
+    s.show();
+   </script> 
+</body>
+</html>
