@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student
+        { 
+            constructor(name)
+            {
+                this.name=name;
+            }
+            showName()
+            {
+                console.log(this.name);
+            }
+        }
+        class RollNo extends Student
+        {
+            constructor(rollno,name)
+            {
+               super(name);
+               this.rollno=rollno;
+            }
+            show()
+            {
+               super.showName();
+               console.log(this.rollno);
+            }
+        }
+        class Marks extends Student
+        {
+            constructor(m1,m2,m3,name)
+            {
+                super(name);
+                this.m1=m1;
+                this.m2=m2;
+                this.m3=m3;
+            }
+            show()
+            {
+                super.showName();
+                console.log("Marks:"+this.m1 +" " +this.m2 +" " +this.m3);
+                var total=this.m1+this.m2+this.m3;
+                console.log("Total:"+total);
+                var per=total/3;
+                console.log("Percentage:"+per);
+            }
+        }
+        const r=new RollNo(1,"kajal");
+        r.show();
+        const m=new Marks(70,80,90,"kajal");
+        m.show();
+    </script>
+</body>
+</html>
