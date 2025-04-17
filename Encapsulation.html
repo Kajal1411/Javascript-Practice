@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Vehicle
+        {
+            //public properties
+            name;
+            color;
+            wheels;
+
+            //private property
+            #regNo;
+
+            //constructor
+            constructor(name,color,wheels,regNo)
+            {
+                this.name=name;
+                this.color=color;
+                this.wheels=wheels;
+                this.#regNo=regNo;
+            }
+            getDetails()
+            {
+                console.log(this.name +" "+ this.color +" " + this.wheels +" "+ this.#regNo);
+            }
+        }
+        const veh=new Vehicle("Scooter","Black",2,1234);
+        veh.getDetails();
+        console.log(veh.name);
+        //console.log(name.#regNo);  //error can't access it outside the class
+        
+    </script>
+</body>
+</html>
