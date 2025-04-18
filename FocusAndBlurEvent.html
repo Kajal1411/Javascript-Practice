@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus and Blur Events</title>
+</head>
+<body>
+
+    <h1>Focus and Blur Example</h1>
+    <input type="text" id="nameInput" placeholder="Focus on me!">
+    <p id="message"></p>
+
+    <script>
+        const nameInput = document.getElementById('nameInput');
+        const message = document.getElementById('message');
+
+        // Focus event: when the input gains focus
+        nameInput.addEventListener('focus', function() {
+            message.textContent = 'Input is focused!';
+        });
+
+        // Blur event: when the input loses focus
+        nameInput.addEventListener('blur', function() {
+            message.textContent = 'Input lost focus!';
+        });
+    </script>
+
+</body>
+</html>
