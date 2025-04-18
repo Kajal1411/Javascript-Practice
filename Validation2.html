@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return data()" action="index.html" class="LoginForm"> 
+        <fieldset style="border: 3px solid black;">
+          
+                <br>
+                <p style="font-size: 17px; font-weight: bold;">Welcome!</p>
+                <h2>Login</h2>
+
+                <label for="usertype" style="padding-right: 175px;"><b>Usertype:</b></label><br>
+                <select name="usertype" id="usertype" size="1" style="height: 30px; width: 255px;">
+                    <optgroup>
+                        <option value="--select--">--select--</option>
+                        <option value="admin">Admin</option>
+                        <option value="student">Student</option>
+                    </optgroup>
+                </select><br><br>
+
+            <label for="email" style="padding-right: 210px;"><b>Email:</b></label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" size="30" style="height: 29px;"> <br><br>
+           
+            <label for="password" style="padding-right: 183px;"><b>Password:</b></label><br>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" size="30" style="height: 29px;"> 
+            <br><br>
+
+            <button type="submit" class="loginBtn">Login</button><br><br><br>
+            <p style="display: inline;">Don't have an account?</p>
+            <a href="registration.html" style="display: inline;">Register here!</a>
+            <br><br><br>
+    </fieldset>
+    </form>
+   </div>
+</div>
+ 
+<script>
+    function data()
+    {
+        var Utype=document.getElementById("usertype").value;
+        var email=document.getElementById("email").value;
+        var pass=document.getElementById("password").value;
+        if(Utype==""||email==""||pass=="")
+        {
+            alert("All fields are mandatory");
+            return false;
+        }
+        else if(Utype=="--select--")
+        {
+            alert("Select user type");
+            return false;
+        }
+        else if(!validateEmail(email))
+        {
+            alert("Please enter valid Email!");
+            return false;
+        }
+        else if(pass.length<8 || pass.length>12)
+        {
+            alert("Minimum legth of password should be 8 digit and max 12 digit");
+            return false;
+        }
+        else
+        {
+            return true;
+        }           
+    }
+
+    function validateEmail(email)
+    {
+       const regex=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}$/;
+       return regex.test(email);
+    }
+</script> 
+
+    
+</body>
+</html>
