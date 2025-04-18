@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Event Handling</title>
+  <style>
+    #message {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+        <h2>Press any key and see the result below:</h2>
+        <p id="message">Press a key!</p>
+
+        <script>
+            const message = document.getElementById('message');
+
+            // Keydown event: Triggered when a key is pressed down (any key press)
+            document.addEventListener('keydown', function(event) 
+            {
+                message.textContent =`| Key pressed: ${event.key} (Key code: ${event.keyCode}`; 
+                //prints keyName and Keycode which is press
+            });
+
+            // Keyup event: Triggered when a key is released
+            document.addEventListener('keyup', function(event)
+            {
+                message.textContent += `| key released: ${event.key}`;
+            });
+
+        </script>
+
+</body>
+</html>
